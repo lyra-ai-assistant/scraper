@@ -1,0 +1,10 @@
+{
+  "urlToScrap": "THIS MUST BE SET BY YOU",
+  "outputDirectory": "result",
+  "verbose": true,
+  "optional": {
+    "noDirectory": false,
+    "previusDataSet": null,
+    "customData": null
+  }
+}
