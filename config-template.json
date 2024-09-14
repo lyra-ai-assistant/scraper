@@ -1,5 +1,6 @@
 {
-  "urlToScrap": "THIS MUST BE SET BY YOU",
+  "scraperName": "spyder",
+  "urlToScrap": ["THIS MUST BE SET BY YOU"],
   "outputDirectory": "result",
   "verbose": true,
   "optional": {

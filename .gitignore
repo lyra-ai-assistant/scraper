@@ -1,5 +1,7 @@
 #extras
+__pycache__/*
 config.json
+venv
 
 # Logs
 logs
