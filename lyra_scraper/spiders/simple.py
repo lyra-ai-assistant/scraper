@@ -14,7 +14,8 @@ class SimpleSpider(scrapy.Spider):
             extracted_data = {}
             for field_name, field_selector in fields.items():
                 extracted_data[field_name] = element.css(field_selector).get()
-                print(field_name, " ", extracted_data[field_name])
+                if (vars.verbose):
+                    print(field_name, " ", extracted_data[field_name])
             yield extracted_data
 
     def parse(self, response):
