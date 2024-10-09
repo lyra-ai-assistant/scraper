@@ -16,11 +16,13 @@ vars = SimpleNamespace(
     scraperName=config.get('scraperName', "spyder"),
     urlToScrap=config.get('urlToScrap', []),
     domainToScrap=config.get('domainToScrap', []),
-    outputDirectory=config.get('outputDirectory', ""),
-    verbose=config.get('verbose', False),
-
-    scraperTargets=config.get('selectors', {}),
 
     outputFileName=optional.get('outputFileName', "crawler_data"),
     outputFileFormat=optional.get('outputFileFormat', "csv"),
+    outputDirectory=optional.get('outputDirectory', ""),
+
+    verbose=optional.get('verbose', False),
+
+    scraperTargets=config.get('selectors', {}),
+
 )
