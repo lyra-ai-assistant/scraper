@@ -13,13 +13,13 @@ with open(config_file, 'r') as configFile:
 optional = config.get('optional', {})
 
 vars = SimpleNamespace(
-    scraperName=config.get('scraperName', "spyder"),
+    scraperName=config.get('scraperName', "spider"),
     urlToScrap=config.get('urlToScrap', []),
     domainToScrap=config.get('domainToScrap', []),
 
     outputFileName=optional.get('outputFileName', "crawler_data"),
-    outputFileFormat=optional.get('outputFileFormat', "csv"),
-    outputDirectory=optional.get('outputDirectory', ""),
+    outputFileFormat=optional.get('outputFileFormat', "json"),
+    outputDirectory=optional.get('outputDirectory', "result"),
 
     verbose=optional.get('verbose', False),
 
