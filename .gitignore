@@ -6,6 +6,7 @@
 
 #extras
 *.json
+result
 venv
 
 ### Python ###
